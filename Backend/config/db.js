@@ -18,7 +18,7 @@ export const connectDB = async () => {
 
     console.log("✅ Database connected successfully");
 
-    client.release(); // Return connection to the pool
+    client.release(); 
   } catch (error) {
     console.error("❌ Database connection failed");
     console.error(error.message);
